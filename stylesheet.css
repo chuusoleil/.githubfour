@@ -1,0 +1,266 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #121212;
+    font-family: "Hiragino Kaku Gothic ProN";
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+
+#header {
+    max-width: 600px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-title a img {
+    width: 175px;
+}
+
+
+
+#navi {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    padding: 60px 25px;
+    box-sizing: border-box;
+    background-color: #121212;
+    z-index: 20;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#navi a {
+    color: #ffffff;
+}
+
+.navi-contents li {
+    font-size: 0.9rem;
+    padding: 20px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.navi-contents:nth-child(1) {
+    border-top: 1px solid #ffffff;
+}
+
+.navi-sns {
+    margin-top: 60px;
+}
+
+.navi-sns li {
+    padding: 5px 0;
+}
+
+.open #navi {
+    left: 0;
+    opacity: 1;
+}
+
+
+
+.toggle_btn {
+    width: 30px;
+    height: 30px;
+    z-index: 20;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.toggle_btn span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #333333;
+    border-radius: 4px;
+    position: absolute;
+    transition: all 0.5px;
+}
+
+.toggle_btn span:nth-child(1) {
+    top: 4px;
+}
+
+.toggle_btn span:nth-child(2) {
+    top: 14px;
+}
+
+.toggle_btn span:nth-child(3) {
+    bottom: 4px;
+}
+
+
+#mask {
+    display: none;
+    transition: all 0.5s;
+}
+
+.open #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+
+.section-title {
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+#bg-video {
+    width: 100%;
+}
+
+
+
+
+
+#pickup {
+    width: 100%;
+    padding: 100px 0 50px 0;
+}
+
+.pickup-items div {
+    padding: 0 30px;
+}
+
+
+
+
+
+
+
+#feature {
+    max-width: 1240px;
+    padding: 100px 16px 50px 16px;
+}
+
+.feature-contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature-contents article {
+    width: 32%;
+}
+
+.feature-text {
+    padding: 30px;
+}
+
+.feature-text .category {
+    font-size: 0.75rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.feature-text h3 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.feature-text .date {
+    font-size: 0.75rem;
+    text-align: right;
+}
+
+
+
+
+#contact {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.contact-contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.contact-text {
+    width: 44%;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.contact-contents form {
+    width: 45%;
+    font-size: 0.9rem;
+}
+
+.contact-contents form dd {
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+.contact-contents form dd input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.contact-contents form .button input {
+    width: 200px;
+    height: 50px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #121212;
+    border: 1px solid #ffffff;
+    margin-top: 7px;
+}
+
+.contact-contents form .button input:hover {
+    color: #121212;
+    background-color: #ffffff;
+}
+
+
+
+#footer {
+    background-color: #121212;
+}
+
+#footer p {
+    color: #ffffff;
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
